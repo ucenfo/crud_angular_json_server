@@ -9,7 +9,7 @@ for (var i = 1; i<= 20; i++) {
     descripcion: faker.lorem.sentence(),
     fechaFabricacion: faker.date.past(),
     numeroParte: faker.datatype.number(),
-    Comentarios: faker.lorem.sentences()
+    comentarios: faker.lorem.sentences()
   });
 }
 
