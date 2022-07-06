@@ -28,12 +28,15 @@ export class ProductosService {
    * @returns 
    */
   get(id: any): Observable<any> {
+    console.log(`${baseUrl}/${id}`);
     return this.http.get(`${baseUrl}/${id}`);
   }
   create(data: Producto): Observable<any> {
+    console.log(baseUrl, data);
     return this.http.post(baseUrl, data);
   }
   update(id: any, data: Producto): Observable<any> {
+    console.log(`${baseUrl}/${id}`);
     return this.http.put(`${baseUrl}/${id}`, data)
   }
   delete(id: any): Observable<any> {
@@ -43,6 +46,7 @@ export class ProductosService {
     return this.http.delete(baseUrl);
   }
   findByName(name: any): Observable<any> {
+    console.log(`${baseUrl}?nombre=${name}`);
     return this.http.get(`${baseUrl}?nombre=${name}`);
   }
 }

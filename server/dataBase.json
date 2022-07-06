@@ -1,14 +1,6 @@
 {
   "productos": [
     {
-      "id": 1,
-      "nombre": "Gorgeous Cotton Tuna",
-      "descripcion": "Aut sint aliquam.",
-      "fechaFabricacion": "2021-08-16T22:19:55.597Z",
-      "numeroParte": 44028,
-      "comentarios": "Est consequatur autem sint iusto animi qui dolore. Possimus est cupiditate. Ut magni qui sapiente omnis consectetur aut et voluptatum in. Eaque dignissimos voluptas."
-    },
-    {
       "id": 2,
       "nombre": "Awesome Frozen Keyboard",
       "descripcion": "Et est et eius fugit expedita vel repellat error.",
@@ -23,14 +15,6 @@
       "fechaFabricacion": "2021-10-13T11:45:05.515Z",
       "numeroParte": 7701,
       "comentarios": "Dignissimos ipsa nostrum voluptatum consequatur qui quia dolorem. Repellat eos vel neque maiores vitae facere impedit praesentium."
-    },
-    {
-      "id": 4,
-      "nombre": "Refined Fresh Computer",
-      "descripcion": "Eaque error rerum dicta sed dolores similique necessitatibus.",
-      "fechaFabricacion": "2022-02-08T04:43:37.540Z",
-      "numeroParte": 69713,
-      "comentarios": "Quaerat optio aut tenetur quasi fugit. Quos molestiae blanditiis fuga quis quibusdam est dolor dolorum. Explicabo nihil qui maxime tempore culpa. Totam eos nemo voluptatem aut. Atque optio eos minima impedit. Dolore ullam velit nihil sed voluptas ducimus aut quia omnis."
     },
     {
       "id": 5,
@@ -95,14 +79,6 @@
       "fechaFabricacion": "2021-11-26T17:57:48.325Z",
       "numeroParte": 80532,
       "comentarios": "Error aspernatur saepe officia dolorum soluta dolor eum numquam. Laborum porro aut."
-    },
-    {
-      "id": 13,
-      "nombre": "Fantastic Wooden Gloves",
-      "descripcion": "Ea voluptatem itaque.",
-      "fechaFabricacion": "2021-11-20T00:00:32.246Z",
-      "numeroParte": 52436,
-      "comentarios": "Animi aut aut totam est necessitatibus exercitationem impedit saepe. Quaerat similique delectus at et consequatur non praesentium quis reprehenderit."
     },
     {
       "id": 14,

@@ -12,6 +12,8 @@ export class ListarProductoComponent implements OnInit {
   productoActual: Producto = new Producto();
   currentIndex = -1;
   nombre = '';
+  id = '';
+  existe = true;
   constructor(private productosService: ProductosService) { }
 
   ngOnInit(): void {
@@ -60,6 +62,20 @@ export class ListarProductoComponent implements OnInit {
           console.log(data);
         },
         error => {
+          console.log(error);
+        });
+  }
+  buscarPorId(): void {
+    this.existe = true;
+    this.productosService.get(+this.id)
+      .subscribe(
+        data => {
+          console.log(data)
+          this.productoActual = data;
+          console.log(data);
+        },
+        error => {
+          this.existe = false;
           console.log(error);
         });
   }

@@ -1,0 +1,18 @@
+.odd {
+    background-color: rgb(187, 221, 218);
+}
+.efect:hover {
+    background-color: rgb(152, 193, 230);
+    color: black;
+}
+.title {
+    background-color: darkgray;
+    font-weight: bold;
+}
+.active {
+    background-color: rgb(68, 68, 218);
+    color: bisque;
+}
+small {
+    color: red;
+}

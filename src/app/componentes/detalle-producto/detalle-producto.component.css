@@ -1,0 +1,7 @@
+.botones {
+    display: flex;
+}
+.btn {
+    width: 30%;
+    margin: 0 10%;
+}

@@ -18,9 +18,49 @@
         </div>
       </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-8">
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Buscar por id"
+          [(ngModel)]="id"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            (click)="buscarPorId()"
+          >
+            Buscar
+          </button>
+        </div>
+      </div>
+      <small *ngIf="!existe">Producto no existe</small>
+    </div>
+    <div class="col-md-8">
       <h4>Lista de Productos</h4>
-      <ul class="list-group">
+      <table>
+        <thead class="title">
+            <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let prod of productos; let i = index"
+            [class.active]="i == currentIndex"
+            (click)="setActivarProducto(prod, i)"
+            [ngClass]="{odd: (i + 1)%2 === 0}"
+            class="efect">
+                <td>{{ i + 1 }}</td>
+                <td>{{ prod.nombre }}</td>
+                <td>{{ prod.descripcion }}</td>
+            </tr>
+        </tbody>
+      </table>
+      <!-- <ul class="list-group">
         <li
           class="list-group-item"
           *ngFor="let producto of productos; let i = index"
@@ -29,13 +69,13 @@
         >
           {{ producto.nombre }}
         </li>
-      </ul>
+      </ul> -->
   
       <button class="m-3 btn btn-sm btn-danger" (click)="eliminarTodosProductos()">
         Eliminar Todo
       </button>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-4">
       <div *ngIf="productoActual">
         <h4>Producto</h4>
         <div>

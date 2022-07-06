@@ -58,18 +58,20 @@
   
   
       </form>
-  
-      <button class="btn btn-success" (click)="borrarProducto()">
-        Borrar
-      </button>
-  
-      <button
-        type="submit"
-        class="btn btn-success"
-        (click)="actualizarProducto()"
-      >
-        Actualizar
-      </button>
+      <div class="botones">
+        <button class="btn btn-danger" (click)="borrarProducto()">
+          Borrar
+        </button>
+    
+        <button
+          type="submit"
+          class="btn btn-warning"
+          (click)="actualizarProducto()"
+        >
+          Actualizar
+        </button>
+      </div>
+      
       <p>{{ mensaje }}</p>
     </div>
   
